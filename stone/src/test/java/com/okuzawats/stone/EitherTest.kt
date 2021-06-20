@@ -5,7 +5,7 @@ import org.junit.Test
 class EitherTest {
   @Test
   fun testEither() {
-    Either.Left(e = Throwable())
+    Either.Left(error = Throwable())
     Either.Right(value = 42)
   }
 }

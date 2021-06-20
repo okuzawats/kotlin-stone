@@ -1,6 +1,5 @@
 package com.okuzawats.stone
 
-import org.junit.Assert.*
 import org.junit.Test
 
 class OptionTest {

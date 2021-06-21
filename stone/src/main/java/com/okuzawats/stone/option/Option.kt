@@ -1,7 +1,4 @@
-package com.okuzawats.stone
-
-import com.okuzawats.stone.Option.None
-import com.okuzawats.stone.Option.Some
+package com.okuzawats.stone.option
 
 /**
  * Has [Some] or [None].

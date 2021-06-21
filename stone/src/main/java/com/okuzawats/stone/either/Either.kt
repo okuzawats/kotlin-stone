@@ -1,4 +1,4 @@
-package com.okuzawats.stone
+package com.okuzawats.stone.either
 
 /**
  * Has [Left] or [Right].

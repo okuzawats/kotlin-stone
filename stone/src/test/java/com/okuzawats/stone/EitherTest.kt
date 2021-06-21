@@ -1,5 +1,6 @@
 package com.okuzawats.stone
 
+import com.okuzawats.stone.either.Either
 import org.junit.Test
 
 class EitherTest {

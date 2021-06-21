@@ -1,4 +1,4 @@
-package com.okuzawats.stone.option
+package com.okuzawats.stone
 
 /**
  * Has [Some] or [None].

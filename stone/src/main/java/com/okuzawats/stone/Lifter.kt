@@ -1,4 +1,4 @@
-package com.okuzawats.stone.option
+package com.okuzawats.stone
 
 /**
  * convert nullable value to Option

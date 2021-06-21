@@ -1,4 +1,4 @@
-package com.okuzawats.stone.either
+package com.okuzawats.stone
 
 import org.junit.Test
 

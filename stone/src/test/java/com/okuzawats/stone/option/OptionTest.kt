@@ -1,6 +1,5 @@
-package com.okuzawats.stone
+package com.okuzawats.stone.option
 
-import com.okuzawats.stone.option.Option
 import org.junit.Test
 
 class OptionTest {

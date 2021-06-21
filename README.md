@@ -7,8 +7,6 @@ Add the maven repository to root build.gradle.
 ```groovy
 allprojects {
   repositories {
-    google()
-    jcenter()
     maven {
       url 'http://okuzawats.github.io/kotlin-stone/'
     }

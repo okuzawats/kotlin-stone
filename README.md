@@ -2,7 +2,21 @@
 A minimal library for Android / Kotlin that offers Option and Eigher.
 
 ## activate
-Add the dependency.
+Add the maven repository to root build.gradle.
+
+```groovy
+allprojects {
+  repositories {
+    google()
+    jcenter()
+    maven {
+      url 'http://okuzawats.github.io/kotlin-stone/'
+    }
+  }
+}
+```
+
+Add the dependency to module's build.gradle.
 
 ```groovy
 dependencies {

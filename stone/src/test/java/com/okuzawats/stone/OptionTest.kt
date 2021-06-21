@@ -4,8 +4,17 @@ import org.junit.Test
 
 class OptionTest {
   @Test
-  fun testOption() {
-    Option.Some(value = 42)
-    Option.None
+  fun testOption_hasValue() {
+    val target = Option.Some(value = 42)
+    val expected = 42
+
+    assert(target.value == expected)
+  }
+
+  @Test
+  fun testOption_isNone() {
+    val target = Option.None
+
+    assert(target is Option.None)
   }
 }

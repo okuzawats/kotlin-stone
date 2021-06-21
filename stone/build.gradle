@@ -38,7 +38,7 @@ dependencies {
   testImplementation 'junit:junit:4.+'
 }
 
-def repo = new File(rootDir, "repository")
+def repo = new File(rootDir, "docs")
 
 apply plugin: 'maven'
 

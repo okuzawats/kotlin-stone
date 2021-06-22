@@ -1,5 +1,5 @@
 # Stone
-A minimal library for Android / Kotlin that offers Option and Eigher.
+A minimal library for Android / Kotlin that offers Option and Either.
 
 ## activate
 Add the maven repository to root build.gradle.

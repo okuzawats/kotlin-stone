@@ -6,7 +6,7 @@ package com.okuzawats.stone
  * [Left] has a [Throwable].
  * [Right] has a value of [T].
  */
-sealed class Either<out E : Throwable, T> {
+sealed class Either<out E : Throwable, out T : Any> {
 
   /**
    * A subclass of [Either] and has an error.
@@ -20,5 +20,5 @@ sealed class Either<out E : Throwable, T> {
    *
    * @param value [T]
    */
-  data class Right<T>(val value: T) : Either<Nothing, T>()
+  data class Right<out T : Any>(val value: T) : Either<Nothing, T>()
 }

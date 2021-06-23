@@ -18,6 +18,6 @@ Add the dependency to module's build.gradle.
 
 ```groovy
 dependencies {
-  implementation "com.okuzawats:stone:0.0.1"
+  implementation "com.okuzawats:stone:x.y.z"
 }
 ```

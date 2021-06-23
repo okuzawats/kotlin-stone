@@ -6,7 +6,7 @@ class OptionTest {
   @Test
   fun testOption_hasValue() {
     val target = Option.Some(value = 42)
-    val expected = 42
+    val expected = 0
 
     assert(target.value == expected)
   }

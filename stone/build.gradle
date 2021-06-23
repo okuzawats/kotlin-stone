@@ -11,8 +11,10 @@ android {
   defaultConfig {
     minSdkVersion 21
     targetSdkVersion 30
-    versionCode 1
-    versionName "1.0"
+
+    // may be we do not need here
+    versionCode 2
+    versionName "0.0.2"
 
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     consumerProguardFiles "consumer-rules.pro"
@@ -46,7 +48,7 @@ uploadArchives {
   repositories {
     mavenDeployer {
       repository url: "file://${repo.absolutePath}"
-      pom.version = '0.0.1'
+      pom.version = '0.0.2'
       pom.groupId = 'com.okuzawats'
       pom.artifactId = 'stone'
     }

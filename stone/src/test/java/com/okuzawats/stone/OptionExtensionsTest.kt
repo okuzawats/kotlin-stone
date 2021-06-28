@@ -48,4 +48,26 @@ class OptionExtensionsTest {
 
     assert(target is Option.None)
   }
+
+  @Test
+  fun testFilter_returnsSomeIfPredicateIsTrue() {
+    val target = Option.Some(value = 42).filter { it > 0 }
+    val expected = 42
+
+    assert(target is Option.Some && target.value == expected)
+  }
+
+  @Test
+  fun testFilter_returnsNoneIfPredicateIsFalse() {
+    val target = Option.Some(value = 42).filter { it < 0 }
+
+    assert(target is Option.None)
+  }
+
+  @Test
+  fun testFilter_returnsNoneIfNone() {
+    val target = Option.None.filter { true }
+
+    assert(target is Option.None)
+  }
 }

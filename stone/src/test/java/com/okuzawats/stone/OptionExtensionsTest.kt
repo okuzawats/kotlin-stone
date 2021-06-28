@@ -33,4 +33,19 @@ class OptionExtensionsTest {
 
     assert(target is Option.None)
   }
+
+  @Test
+  fun testFlatMap_returnsTransformedSomeIfSome() {
+    val target = Option.Some(value = 42).flatMap { Option.Some(value = it.toString()) }
+    val expected = 42.toString()
+
+    assert(target is Option.Some && target.value == expected)
+  }
+
+  @Test
+  fun testFlatMap_returnsNoneIfNone() {
+    val target = Option.None.flatMap { Option.Some(value = it.toString()) }
+
+    assert(target is Option.None)
+  }
 }

@@ -49,12 +49,8 @@ fun <T : Any, S : Any> Option<T>.flatMap(transform: (T) -> Option<S>): Option<S>
  */
 fun <T : Any> Option<T>.filter(predicate: (T) -> Boolean): Option<T> =
   when (this) {
-    is Option.Some -> if (predicate(value)) {
-      Option.Some(value = value)
-    } else {
-      Option.None
-    }
-    is Option.None -> {
-      Option.None
-    }
+    is Option.Some ->
+      if (predicate(value)) Option.Some(value = value)
+      else Option.None
+    is Option.None -> Option.None
   }

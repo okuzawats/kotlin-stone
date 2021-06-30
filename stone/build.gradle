@@ -40,6 +40,12 @@ dependencies {
   testImplementation 'junit:junit:4.13.2'
 }
 
+ktlint {
+  reporters {
+    reporter "CHECKSTYLE"
+  }
+}
+
 def repo = new File(rootDir, "docs")
 
 apply plugin: 'maven'

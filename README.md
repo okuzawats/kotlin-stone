@@ -1,4 +1,7 @@
 # Stone
+
+<img src="https://github.com/okuzawats/kotlin-stone/actions/workflows/test.yaml/badge.svg?branch=main"> <img src="https://github.com/okuzawats/kotlin-stone/actions/workflows/lint.yaml/badge.svg?branch=main">
+
 A minimal library for Android / Kotlin that offers Option and Either.
 
 ## activate

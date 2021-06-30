@@ -13,8 +13,8 @@ android {
     targetSdkVersion 30
 
     // may be we do not need here
-    versionCode 2
-    versionName "0.0.2"
+    versionCode 3
+    versionName "0.0.3"
 
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     consumerProguardFiles "consumer-rules.pro"
@@ -54,7 +54,7 @@ uploadArchives {
   repositories {
     mavenDeployer {
       repository url: "file://${repo.absolutePath}"
-      pom.version = '0.0.2'
+      pom.version = '0.0.3'
       pom.groupId = 'com.okuzawats'
       pom.artifactId = 'stone'
     }

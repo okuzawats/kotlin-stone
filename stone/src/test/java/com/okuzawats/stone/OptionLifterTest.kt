@@ -2,7 +2,7 @@ package com.okuzawats.stone
 
 import org.junit.Test
 
-class LifterTest {
+class OptionLifterTest {
   @Test
   fun testToOption_fromNonNull() {
     val int: Int? = 42

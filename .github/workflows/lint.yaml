@@ -31,7 +31,11 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7'
-          bundler-cache: true
+      - name: Install Gems
+        if: ${{ failure() }}
+        run: |
+          gem install bundler
+          bundle install
       - name: Run Danger
         if: ${{ failure() }}
         uses: MeilCli/danger-action@v5
